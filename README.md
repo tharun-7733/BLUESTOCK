@@ -50,12 +50,12 @@ mutual-fund-analysis/
 - `09_portfolio_holdings.csv`: Detailed stock holdings and weightages for the funds.
 - `10_benchmark_indices.csv`: Historical data for benchmark indices (e.g., NIFTY 50, NIFTY 100).
 
-**Live API Data:**
-The `data_analysis.py` script automatically fetches live NAV data for 6 specific Bluechip/Large Cap schemes from the `mfapi.in` API and saves them in `data/raw/`.
+## 📅 Project Log
 
-## 📈 Initial Analysis & Data Quality
-
-An initial data quality check was performed (see `reports/data_quality_summary.md` and `reports/data_quality_summary.json` for details):
-- All 40 funds in the `01_fund_master.csv` correctly map to historical data in the `02_nav_history.csv`. 
-- No orphaned AMFI codes were found.
-- Handled anomalies such as expected `NaN` values for initial Year-over-Year (YoY) growth calculations in SIP data.
+### Day 01: Environment Setup & Data Ingestion
+- **Environment Creation:** Built the foundational folder structure (`data/raw`, `notebooks`, `sql`, `reports`, etc.).
+- **Version Control:** Initialized the Git repository to track project progress.
+- **Dependencies:** Created `requirements.txt` and installed all necessary Python libraries (`pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`, `sqlalchemy`, `requests`, `scipy`, `jupyter`).
+- **Data Loading & Profiling:** Loaded the 10 core CSV datasets using Pandas, printing their shapes, column data types, and initial rows to understand the structure. Handled anomalies (e.g., expected `NaN`s in early YoY SIP calculations).
+- **Live API Integration:** Built a robust script (`data_analysis.py`) to connect to the `mfapi.in` API. Fetched and saved raw historical NAV data for 6 benchmark funds: HDFC Top 100, SBI Bluechip, ICICI Bluechip, Nippon Large Cap, Axis Bluechip, and Kotak Bluechip.
+- **Data Validation:** Parsed `01_fund_master.csv` to map out the 10 unique fund houses and AMFI code structures. Validated that all 40 tracked funds possess corresponding data within the `02_nav_history.csv` dataset, confirming 100% referential integrity.
