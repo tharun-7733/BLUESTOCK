@@ -1,17 +1,6 @@
 {
-  "timestamp": "2026-06-22T17:55:00.321606",
-  "total_funds_in_master": 37642,
-  "unique_fund_houses": "N/A",
-  "unique_categories": "N/A",
-  "unique_subcategories": "N/A",
-  "unique_risk_grades": "N/A",
-  "null_scheme_codes": 0,
-  "target_schemes_found": 6,
-  "target_schemes_total": 6,
-  "columns_in_master": [
-    "schemeCode",
-    "schemeName",
-    "isinGrowth",
-    "isinDivReinvestment"
-  ]
+    "total_funds_in_master": 40,
+    "total_funds_in_nav_history": 40,
+    "funds_missing_nav_history": [],
+    "status": "PASS"
 }
