@@ -22,7 +22,7 @@ mutual-fund-analysis/
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/tharun-7733/BLUESTOCK.git
    cd mutual-fund-analysis
    ```
 
